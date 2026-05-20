@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Електронний кабінет - ГУ ДСНС Сумщина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page-body">
+
+    <div class="register-container">
+        <div class="logo-container">
+            <img src="dsns-emblem.jpg" alt="Емблема ДСНС України" class="dsns-logo">
+        </div>
+
+        <h2>Електронний кабінет</h2>
+        <p class="subtitle">ГУ ДСНС України у Сумській області</p>
+        
+        <form id="regForm">
+            <div class="input-group">
+                <label for="email">Електронна пошта користувача</label>
+                <input type="email" id="email" required placeholder="name@dsns.gov.ua">
+            </div>
+
+            <div class="input-group">
+                <label for="division">Оберіть підрозділ / загін</label>
+                <select id="division">
+                    <option value="Апарат Головного управління (м. Суми)">Апарат Головного управління (м. Суми)</option>
+                    <option value="1-й державний пожежно-рятувальний загін">1-й державний пожежно-рятувальний загін</option>
+                    <option value="2-й державний пожежно-рятувальний загін">2-й державний пожежно-рятувальний загін</option>
+                    <option value="3-й державний пожежно-рятувальний загін">3-й державний пожежно-рятувальний загін</option>
+                    <option value="Інший підрозділ">Інший підрозділ</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" required placeholder="Введіть пароль">
+            </div>
+
+            <button type="submit" class="btn-submit" id="submitBtn">Вхід</button>
+        </form>
+        
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
